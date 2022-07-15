@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .input-filter {
+    input,
+    select {
+      width: 100%;
+      padding: 0 1rem;
+      background-color: transparent;
+      color: black;
+      border: 2px solid black;
+      height: 40px;
+      line-height: 40px;
+
+      &.remove-border-right {
+        border-right: 0;
+      }
+      option{
+        color: black;
+      }
+    }
+    input::placeholder {
+      color: black;
+    }
+    h2 {
+      color: black;
+      margin: 0%;
+      margin-bottom: 7px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }

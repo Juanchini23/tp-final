@@ -1,0 +1,295 @@
+input{
+    a{
+        color: white;
+    }
+}
+
+.modal-form-container{
+    margin-top: 3rem;
+}
+
+.cambiar-estado-fisico{
+    margin-top: -2rem;
+}
+
+.span-image{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font);
+    span {
+        color: #A1E533;
+    }
+}
+
+.swiper-container-with-arrows {
+    display: flex;
+    align-items: center;
+
+    .left-btn,
+    .right-btn {
+        img {
+            width:80px;
+            height: 80px;
+            padding: .2rem;
+        }
+    }
+
+    .left-btn{
+        img{
+            transform: rotate(180deg)
+        }
+    }
+
+    .right-btn {
+        left: initial;
+        right: -2.3rem;
+
+        img {
+            transform: none;
+        }
+    }
+}
+
+
+.cambio-fisico-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    img{
+        width: 180px;
+        margin: 0rem .5rem 0rem .5rem;
+        border: 2px solid var(--highlight-color);
+        height: 100%;
+        transition-duration: 0.2s;
+        transition-delay: 0.2s;
+    }
+
+    .cambio-fisico{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.response-form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-container{
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: row;
+}
+.button-center{
+    display: flex;
+    justify-content: center;
+}
+.checkbox-form{
+    accent-color: var(--highlight-color);
+    height: 25px; 
+    width: 25px !important;
+}
+.textarea-form{
+    margin-top: -2rem;
+}
+.home-page{
+    background-color: rgb(2, 2, 2) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-color{
+    background-color: red;
+}
+
+.first-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.mobile-swiper{
+    display: none;
+}
+
+.div-line{
+    margin: 4rem 0rem 4rem 0rem;
+    background-color: var(--highlight-color);
+    padding: .2rem;
+}
+
+.promo-banner-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0rem 6rem 4rem 6rem;
+    .swiper-container-home {
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 900px;
+        height: 400px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.img-border-graphic{
+    border: 5px solid var(--highlight-color);
+}
+
+.target-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+        width: 100px;
+    }
+
+    .taget {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    p{
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
+        padding-top: -3rem;
+    }
+}
+
+.title-page {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-family: var(--font);
+    span {
+        color: #A1E533;
+    }
+}
+
+.button-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    button{
+        font-size: 1rem;
+    }
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--font);
+    span {
+        color: #A1E533;
+    }
+}
+
+.rutina-h3{
+    font-size: 2rem;
+}
+
+.rutina-h4{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    span {
+        color: #A1E533;
+    }
+}
+
+
+.line-div {
+    height: .11rem;background: rgb(161,229,51);
+    background: linear-gradient(280deg, rgba(161,229,51,1) 0%, rgba(0,0,0,1) 76%);
+}
+
+.title-modal{
+    color: #001e06;
+    text-align: center;
+}
+
+@media(max-width:770px){
+    .btn-gral{
+        font-size: 1rem;
+    }
+    .img-border-graphic{
+        width: 100%;
+            height: 100%;
+    }
+    .response-form-container{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    .mobile-swiper{
+        display: block;
+        img{
+            width: 100%;
+            height: 15rem;
+        }
+    }
+    .promo-banner-home{
+        display: none;
+    }
+    .cambio-fisico-imagenes{
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 140px;
+        }
+    }
+
+    .left-btn,
+    .right-btn{
+        display: none;
+    }
+
+    .target-container{
+        flex-direction: column;
+        padding: 1rem 0rem 1rem 0rem;
+        .taget{
+            padding-top: -3rem;
+            h3{
+                font-size: 1.3rem;
+            }
+            p{
+                padding-top: -7rem;
+            }
+        }
+    }
+}
